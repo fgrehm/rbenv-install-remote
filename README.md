@@ -6,9 +6,10 @@ and [rbenv](https://github.com/sstephenson/rbenv) plugin that hooks into
 
 ## Installation
 
-There's currently no official support for hooking into `rbenv-install`, I've
-sent a patch that will allow for this plugin to work out of the box and meanwhile
-you'll have to use the [hooks-support branch](https://github.com/fgrehm/ruby-build/tree/hooks-support)
+There's currently no official support for hooking into `rbenv-install`, [I've
+sent a patch](https://github.com/sstephenson/ruby-build/pull/201) that will
+allow for this plugin to work out of the box and meanwhile you'll have to use
+the [hooks-support branch](https://github.com/fgrehm/ruby-build/tree/hooks-support)
 from my fork of the project in order for this plugin to work.
 
     $ mkdir -p ~/.rbenv/plugins
