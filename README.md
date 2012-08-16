@@ -26,6 +26,10 @@ Now that you have ruby-build with hooks enabled, installing rbenv-install-remote
 as an rbenv plugin will allow you to use `rbenv install` with remote build
 definitions.
 
+    $ mkdir -p ~/.rbenv/plugins
+    $ cd ~/.rbenv/plugins
+    $ git clone git://github.com:fgrehm/rbenv-install-remote.git
+
 ## Usage
 
 As this plugin will only hook into `ruby-build` and download the custom definition
