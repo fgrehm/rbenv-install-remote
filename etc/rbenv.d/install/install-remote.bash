@@ -17,7 +17,17 @@ URL=${ARGUMENTS[0]}
 VERSION_NAME=${URL##*/}
 VERSION_NAME=${VERSION_NAME%%\?*}
 
-[[ -f $DOWNLOAD_PATH/$VERSION_NAME ]] && { echo "There is already a definition for $VERSION_NAME"; exit 1; }
+if [[ -f $DOWNLOAD_PATH/$VERSION_NAME ]]; then
+  echo -n "There is already a definition for $VERSION_NAME, do you want to overwrite it? [Y/n] "
+  read confirmation
+  if ! ([ -n "${confirmation}" ] || ! [[ "${confirmation}" =~ 'y|Y' ]]); then
+    echo "Aborting installation"
+    exit 1
+  else
+    rm $DOWNLOAD_PATH/$VERSION_NAME
+  fi
+fi
+
 wget $1 -O $DOWNLOAD_PATH/$VERSION_NAME
 
 export DEFINITION=$DOWNLOAD_PATH/$VERSION_NAME
