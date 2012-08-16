@@ -29,7 +29,7 @@ definitions.
 
     $ mkdir -p ~/.rbenv/plugins
     $ cd ~/.rbenv/plugins
-    $ git clone git://github.com:fgrehm/rbenv-install-remote.git
+    $ git clone git://github.com/fgrehm/rbenv-install-remote.git
 
 ## Usage
 
