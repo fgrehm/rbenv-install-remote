@@ -6,26 +6,15 @@ and [rbenv](https://github.com/sstephenson/rbenv) plugin that hooks into
 
 ## Installation
 
-There's currently no official support for hooking into `rbenv-install`, [I've
-sent a patch](https://github.com/sstephenson/ruby-build/pull/201) that will
-allow for this plugin to work out of the box and meanwhile you'll have to use
-the [hooks-support branch](https://github.com/fgrehm/ruby-build/tree/hooks-support)
-from my fork of the project in order for this plugin to work.
-
-    $ mkdir -p ~/.rbenv/plugins
-    $ cd ~/.rbenv/plugins
-    $ git clone git://github.com/fgrehm/ruby-build.git -b hooks-support
-
-If you already have ruby-build installed as a rbenv plugin, you can just checkout
-the hooks-support branch from my fork.
+First make sure you have an updated `ruby-build`, as you'll need the
+[support for hooks](https://github.com/sstephenson/ruby-build/commit/cb2a79f1119daf6cbb030d76f66e9bd04581ccc2)
+in place.
 
     $ cd ~/.rbenv/plugins/ruby-build
-    $ git remote add fgrehm git://github.com/fgrehm/ruby-build.git
-    $ git fetch fgrehm && git checkout fgrehm/hooks-support
+    $ git pull
 
-Now that you have ruby-build with hooks enabled, installing rbenv-install-remote
-as an rbenv plugin will allow you to use `rbenv install` with remote build
-definitions.
+Installing rbenv-install-remote as an rbenv plugin will allow you to use
+`rbenv install` with remote build definitions.
 
     $ mkdir -p ~/.rbenv/plugins
     $ cd ~/.rbenv/plugins
@@ -45,7 +34,7 @@ with rbenv.
 
 If you wanna know more about custom definitions, see the [ruby-build built-in
 definitions](https://github.com/sstephenson/ruby-build/tree/master/share/ruby-build)
-as a starting point for custom definition files.
+as a starting point for definition files.
 
 ### Known definitions
 
