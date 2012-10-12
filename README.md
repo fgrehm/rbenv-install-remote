@@ -32,6 +32,10 @@ to:
 And if everything goes fine, this will provide a `my-ruby-version` for use
 with rbenv.
 
+You can also specify a version name if the url isn't enough:
+
+    $ VERSION_NAME=my-ruby-version rbenv install https://raw.github.com/gist/some-crazy-url.sh
+
 If you wanna know more about custom definitions, see the [ruby-build built-in
 definitions](https://github.com/sstephenson/ruby-build/tree/master/share/ruby-build)
 as a starting point for definition files.

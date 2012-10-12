@@ -14,11 +14,14 @@ DOWNLOAD_PATH="$RBENV_ROOT/plugins/rbenv-install-remote/share/ruby-build-remote"
 mkdir -p $DOWNLOAD_PATH
 
 URL=${ARGUMENTS[0]}
-VERSION_NAME=${URL##*/}
-VERSION_NAME=${VERSION_NAME%%\?*}
+
+if [ -z "${VERSION_NAME}" ]; then
+  VERSION_NAME=${URL##*/}
+  VERSION_NAME=${VERSION_NAME%%\?*}
+fi
 
 if [[ -f $DOWNLOAD_PATH/$VERSION_NAME ]]; then
-  echo -n "There is already a definition for $VERSION_NAME, do you want to overwrite it? [Y/n] "
+  echo -n "There is already a downloaded definition for $VERSION_NAME, do you want to overwrite it? [Y/n] "
   read confirmation
   if ! ([ -n "${confirmation}" ] || ! [[ "${confirmation}" =~ 'y|Y' ]]); then
     echo "Aborting installation"
