@@ -46,13 +46,25 @@ These 2 definitions will allow you to install REE on Ubuntu 12.04 with the patch
 that will enable tcmalloc support so that you won't have to use
 `CONFIGURE_OPTS="--no-tcmalloc"` when running `rbenv install`.
 
-* https://raw.github.com/gist/3345650/ree-1.8.7-2011.03
-* https://raw.github.com/gist/3345650/ree-1.8.7-2012.02
+```terminal
+$ rbenv install https://raw.github.com/gist/3345650/ree-1.8.7-2011.03
+$ rbenv install https://raw.github.com/gist/3345650/ree-1.8.7-2012.02
+```
 
 This one is a patched `1.9.3-p194` for 30% faster Rails boot. See
-https://gist.github.com/3721565 for more information.
+https://gist.github.com/1688857 for more information.
 
-* https://raw.github.com/gist/1688857/2-1.9.3-p194-patched.sh
+```terminal
+$ VERSION_NAME=1.9.3-p194-patched rbenv install https://raw.github.com/gist/1688857/2-1.9.3-p194-patched.sh
+```
+
+There is also an [updated version](https://gist.github.com/2593385) of the patch
+that applies to `1.9.3-p286` as well.
+
+```terminal
+$ rbenv install https://raw.github.com/gist/7f4e8a98c16e9f67ecba/1.9.3-p194-falcon
+$ rbenv install https://raw.github.com/gist/7f4e8a98c16e9f67ecba/1.9.3-p286-falcon
+```
 
 If you have a custom definition to share, please send me the link or a pull request
 adding it to the list above ;)
