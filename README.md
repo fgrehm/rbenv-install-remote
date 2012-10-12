@@ -49,6 +49,11 @@ that will enable tcmalloc support so that you won't have to use
 * https://raw.github.com/gist/3345650/ree-1.8.7-2011.03
 * https://raw.github.com/gist/3345650/ree-1.8.7-2012.02
 
+This one is a patched `1.9.3-p194` for 30% faster Rails boot. See
+https://gist.github.com/3721565 for more information.
+
+* https://raw.github.com/gist/1688857/2-1.9.3-p194-patched.sh
+
 If you have a custom definition to share, please send me the link or a pull request
 adding it to the list above ;)
 
