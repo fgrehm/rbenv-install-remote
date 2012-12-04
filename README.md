@@ -66,7 +66,7 @@ $ rbenv install https://raw.github.com/gist/7f4e8a98c16e9f67ecba/1.9.3-p194-falc
 $ rbenv install https://raw.github.com/gist/7f4e8a98c16e9f67ecba/1.9.3-p286-falcon
 ```
 
-For `1.9.3-p327`:
+For [`1.9.3-p327`](https://gist.github.com/1688857):
 
 ```terminal
 $ VERSION_NAME=1.9.3-p327-patched rbenv install https://raw.github.com/gist/1688857/2-1.9.3-p327-patched.sh
