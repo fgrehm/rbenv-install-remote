@@ -34,7 +34,7 @@ with rbenv.
 
 You can also specify a version name if the url isn't enough:
 
-    $ VERSION_NAME=my-ruby-version rbenv install https://raw.github.com/gist/some-crazy-url.sh
+    $ RUBY_NAME=my-ruby-version rbenv install https://raw.github.com/gist/some-crazy-url.sh
 
 If you wanna know more about custom definitions, see the [ruby-build built-in
 definitions](https://github.com/sstephenson/ruby-build/tree/master/share/ruby-build)
@@ -55,7 +55,7 @@ This one is a patched `1.9.3-p194` for 30% faster Rails boot. See
 https://gist.github.com/1688857 for more information.
 
 ```terminal
-$ VERSION_NAME=1.9.3-p194-patched rbenv install https://raw.github.com/gist/1688857/2-1.9.3-p194-patched.sh
+$ RUBY_NAME=1.9.3-p194-patched rbenv install https://raw.github.com/gist/1688857/2-1.9.3-p194-patched.sh
 ```
 
 There is also an [updated version](https://gist.github.com/2593385) of the patch
@@ -69,7 +69,7 @@ $ rbenv install https://raw.github.com/gist/7f4e8a98c16e9f67ecba/1.9.3-p286-falc
 For [`1.9.3-p327`](https://gist.github.com/1688857):
 
 ```terminal
-$ VERSION_NAME=1.9.3-p327-patched rbenv install https://raw.github.com/gist/1688857/2-1.9.3-p327-patched.sh
+$ RUBY_NAME=1.9.3-p327-patched rbenv install https://raw.github.com/gist/1688857/2-1.9.3-p327-patched.sh
 ```
 
 If you have a custom definition to share, please send me the link or a pull request
