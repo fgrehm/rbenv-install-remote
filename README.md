@@ -47,8 +47,8 @@ that will enable tcmalloc support so that you won't have to use
 `CONFIGURE_OPTS="--no-tcmalloc"` when running `rbenv install`.
 
 ```terminal
-$ rbenv install https://raw.github.com/gist/3345650/ree-1.8.7-2011.03
-$ rbenv install https://raw.github.com/gist/3345650/ree-1.8.7-2012.02
+$ rbenv install https://gist.github.com/fgrehm/3345650/raw/22e1b76faf6ea63c8083deba224bae5fb168b020/ree-1.8.7-2011.03
+$ rbenv install https://gist.github.com/fgrehm/3345650/raw/d0d30531ff380135d6a0154efb7f4f10cd2cc6ca/ree-1.8.7-2012.02
 ```
 
 This one is a patched `1.9.3-p194` for 30% faster Rails boot. See
