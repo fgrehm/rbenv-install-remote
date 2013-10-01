@@ -79,4 +79,4 @@ adding it to the list above ;)
 
 MIT License.
 
-Copyright (c) 2013 Fábio Rehm
+Copyright (c) 2012-2013 Fábio Rehm
